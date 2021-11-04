@@ -76,7 +76,7 @@ gcc/7.3.0
 gcc/8.2.0
 	python/2.7.14
 	python/3.6.4
-  python/3.6.5
+  	python/3.6.5
 	python/3.8.5
 	python_gpu/3.8.5
 gcc/9.3.0
