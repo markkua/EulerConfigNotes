@@ -38,6 +38,12 @@ env2lmod
 bsub gzip big_file.dat
 ```
 
+### Specify group (if in a shareholder group)
+```bash
+bsub -G es_example ...
+```
+Use `my_share_info` to check group name. More detail: [link](https://scicomp.ethz.ch/wiki/Multiple_shareholder_groups)
+
 ### Specify running time
 
 ```bash
