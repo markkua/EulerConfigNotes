@@ -218,7 +218,7 @@ gcc/9.3.0
 
 # Using VSCode
 
-**Do NOT directly connect to login node **via VSCode [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh), because it will start a large number of threads and stop other users from logging in. 
+**Do NOT directly connect to login node** via VSCode [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh), because it will start a large number of threads and stop other users from logging in. 
 
 Then how to connect:
 
