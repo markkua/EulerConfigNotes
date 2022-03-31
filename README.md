@@ -86,8 +86,8 @@ bsub -n number_of_procs ...
 ```
 
 ```bash
-# memory
-bsub -R "rusage[mem=XXX]" ...
+# memory per core
+bsub -n 2 -R "rusage[mem=XXX]" ...
 ```
 
 ```bash
