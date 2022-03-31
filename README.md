@@ -92,7 +92,7 @@ bsub -R "rusage[mem=XXX]" ...
 
 ```bash
 # example:
-bsub -n 32 -W 4:00 -R "rusage[mem=32768]" ./my_cpu_program
+bsub -n 2 -W 4:00 -R "rusage[mem=32768]" ./my_cpu_program
 ```
 
 #### GPU
@@ -104,14 +104,14 @@ bsub -R "rusage[ngpus_excl_p=1]" ./my_cuda_program
 
 ```bash
 # GPU memory
-bsub -n 20 -R "rusage[ngpus_excl_p=1]" -R "select[gpu_mtotal0>=10240]" ./my_cuda_program
+bsub -n 2 -R "rusage[ngpus_excl_p=1]" -R "select[gpu_mtotal0>=10240]" ./my_cuda_program
 ```
 
 ```bash
 # GPU type
-bsub -n 20 -R "rusage[mem=4500,ngpus_excl_p=8]" -R "select[gpu_model0==GeForceGTX1080Ti]" ./my_cuda_program
+bsub -n 2 -R "rusage[mem=4500,ngpus_excl_p=8]" -R "select[gpu_model0==GeForceGTX1080Ti]" ./my_cuda_program
 
-bsub -n 16 -W 4:00 -R "rusage[ngpus_excl_p=1,mem=65536]" -R "select[gpu_mtotal0>=10240]" -R "select[gpu_model0==GeForceRTX2080Ti]" ./my_cuda_program
+bsub -n 2 -W 4:00 -R "rusage[ngpus_excl_p=1,mem=65536]" -R "select[gpu_mtotal0>=10240]" -R "select[gpu_model0==GeForceRTX2080Ti]" ./my_cuda_program
 ```
 
 ## Monitor jobs
