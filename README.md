@@ -221,7 +221,7 @@ gcc/9.3.0
 
 Then how to connect:
 
-1. Establish an ssh tunnel in an interactive job (so you would not use the resource of login node)
+1. Establish an ssh tunnel by submitting a job (so you would not use the resource of login node)
 
     a. Crate this bash file:
     
